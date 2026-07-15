@@ -46,7 +46,14 @@ Users can connect their wallet, check ETH and ERC-20 token balances, switch netw
 
 ## 📸 Screenshots
 
-(Add screenshots here)
+### Dashboard
+![Dashboard](./dashboard.jpg)
+
+### Faucet Transaction
+![Faucet Transaction](./faucet-transaction.jpg)
+
+### Mobile Responsive
+![Mobile Responsive](./mobile-responsive.jpg)
 
 ## 🏗️ Project Architecture
 
