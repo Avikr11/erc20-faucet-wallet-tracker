@@ -1,75 +1,52 @@
-# React + TypeScript + Vite
+# ERC-20 Faucet & Wallet Tracker 🚰
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern Web3 dashboard that allows users to connect their wallet, view balances, claim demo ERC-20 tokens, and interact with a smart contract deployed on the Ethereum Sepolia Testnet.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://erc20-faucet-wallet-tracker.vercel.app
 
-## React Compiler
+## 📌 Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+ERC-20 Faucet & Wallet Tracker is a frontend Web3 application built to demonstrate real blockchain interactions.
 
-## Expanding the ESLint configuration
+Users can connect their wallet, check ETH and ERC-20 token balances, switch networks, and claim test tokens from a custom faucet smart contract.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- 🔗 Wallet connection using RainbowKit
+- ⛓️ Ethereum Sepolia Testnet support
+- 💰 Real-time ETH balance tracking
+- 🪙 ERC-20 token balance tracking
+- 🚰 Claim demo ERC-20 tokens from faucet contract
+- ⏳ 24-hour claim cooldown system
+- ⚠️ Wrong network detection
+- 🎨 Modern responsive Web3 dashboard UI
+- ⚡ Fast data fetching with TanStack Query
+- 🔐 Smart contract interaction using Wagmi + Viem
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠️ Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Frontend
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
 
-```
+### Web3
+- Wagmi
+- Viem
+- RainbowKit
+- WalletConnect
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Tools
+- Git & GitHub
+- Vercel
+- Ethereum Sepolia Testnet
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📸 Screenshots
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+(Add screenshots here)
 
-```
+## 🏗️ Project Architecture
+
